@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            float: left; /* 플로트(부유) : 왼쪽 */
+        }
+        ul + p{ /* ul 태그 다음에 오는 p태그 : 형제 요소 */
+            clear: left; /* float : left를 해제, 원래의 흐름으로 바꾸기 */
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <h1>목록을 만드는 태그</h1>
+        <p>텍스트를 간단하게 정리할때 사용하거나 메뉴나 본문 등에서 자주 사용하는 태그</p>
+        <h2>목록 태그 종류</h2>
+        <p>첫번째, 순서가 있는 목록(ol)</p>
+        <p>두번째, 순서가 없는 목록(ul)</p>
+        <p>세번째, 설명 목록 태그(dl)</p>
+        <hr> <!-- 수평선 태그 : 가로로 긴 줄을 생성 -->
+        <!-- 순서 없는 목록 -->
+        <h2>좋아하는 것</h2>
+        <ul type = "square"><!-- unordered List : ul -->
+            <li>피자</li>
+            <li>치킨</li>
+            <li>햄버거</li>
+        </ul>
+        <hr>
+        <h2>국내 아이돌 순위</h2>
+        <ol type = "1">
+            <li>BTS</li>
+            <li>에스파</li>
+            <li>블랙핑크</li>
+        </ol>
+        <hr>
+        <ul>
+            <li><a href="#"><img src="images/menu_01.png" alt="메일"></a></li>
+            <li><a href="#"><img src="images/menu_02.png" alt="카페"></a></li>
+            <li><a href="#"><img src="images/menu_03.png" alt="블로그"></a></li>
+            <li><a href="#"><img src="images/menu_04.png" alt="지식IN"></a></li>
+            <li><a href="#"><img src="images/menu_05.png" alt="쇼핑"></a></li>
+            <li><a href="#"><img src="images/menu_06.png" alt="쇼핑LIVE"></a></li>
+            <li><a href="#"><img src="images/menu_07.png" alt="Pay"></a></li>
+            <li><a href="#"><img src="images/menu_08.png" alt="TV"></a></li>
+        </ul>
+        <p><a href="#">더보기&gt;</a></p>
+        <h3>라면 끓이는 순서</h3>
+        <ol>
+            <li>냄비에 물을 준비한다.</li>
+            <li>센 불에 3분간 가열한다.</li>
+            <li>물이 끓기 시작하면, 스프를 넣는다.</li>
+            <li>라면을 넣는다.</li>
+            <li>더끓인다.</li>
+        </ol>
+        <hr>
+        <h3>제목과 설명이 한 쌍인 목록</h3>
+        <dl><!-- 정의 목록 -->
+            <dt>올레 1코스</dt><!-- 용어 정의 -->
+            <dd>코스 : 시흥 초등학교 옆 - 광치기 해변</dd>
+            <dd>거리 : 14.6km</dd>
+            <dd>난이도 : 중</dd>
+            <dt>올레 2코스</dt>
+            <dd>코스 : 광치기 해변 - 온평 포구</dd>
+            <dd>거리 : 14.5km</dd>
+            <dd>난이도 : 중</dd>
+        </dl>
+    </body>
+</html>
