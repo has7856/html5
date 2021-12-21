@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 관련 태그</title>
+    <style>
+        body{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th{
+            width: 65px;
+        }
+        table, th, td{
+            border: 1px solid #191919;
+        }
+        th, td{
+            /* 내부여백 */
+            padding: 10px 15px;
+            text-align: center;
+        }
+        .w1{
+            width: 25%;
+        }
+        .w2{
+            width: 75%;
+        }
+        caption{
+            font-size: 18px;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>표(테이블) 표시하는 태그</h1>
+    <table>
+        <caption>입학 지원서</caption>
+        <tr>
+            <th class="w1">이름</th>
+            <td>&nbsp;</td>
+            <th class="w1">연락처</th>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3">&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>

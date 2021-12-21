@@ -1,0 +1,92 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: black;
+    height: 100%;
+}
+.wrap{
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+}
+h2::first-letter{
+    font-size: 2.5rem;
+}
+p{
+    line-height: 1.7rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: disc inside; /* 목록스타일 : 디스크모양, 안쪽 들여쓰기 */
+}
+ul ul{
+    list-style: circle inside;
+    margin: 0 0 0 2rem;
+}
+li{
+    margin: 15px 0;
+}
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px 0 15px;
+    text-transform: uppercase;
+}
+.col_left > img{
+    max-width: 100%;
+    margin: 5% 0;
+}
+#sns{
+    margin-top: 5rem;
+}
+.col_left{
+    background-color: #adadad;
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+.col_right{
+    background-color: white;
+    float: right;
+    width: 70%;
+    height: 100%;
+    padding: 0 15%;
+    box-sizing: border-box;
+}
+table{
+    text-align: center;
+    margin: 0 auto;
+}
+table,th,td{
+    border: 1px solid #dbdbdb;
+    border-collapse: collapse;
+    padding: 10px 15px;
+}
+thead{
+    background-color: #c4c4c4;
+    font-weight: bold;
+}
+caption{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+    .wrap{
+        width: 100%;
+    }
+    .col_left{
+        width: 100%;
+        display: none;
+    }
+    .col_right{
+        width: 100%;
+        float: none;
+    }
+}
